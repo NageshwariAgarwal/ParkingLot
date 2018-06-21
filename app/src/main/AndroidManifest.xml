@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nageshwari.parking_lot">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/parking_lot"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Registration" />
+        <activity android:name=".welcome" />
+        <activity android:name=".newbooking" />
+        <activity android:name=".detail" />
+        <activity android:name=".slotbooking" />
+        <activity android:name=".First">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".adminLogin" />
+        <activity android:name=".adminWelcome" />
+        <activity android:name=".viewUser" />
+        <activity android:name=".newSlot" />
+        <activity android:name=".admin_viewBooking" />
+        <activity android:name=".user_viewBooking" />
+        <activity android:name=".delete"></activity>
+    </application>
+
+</manifest>

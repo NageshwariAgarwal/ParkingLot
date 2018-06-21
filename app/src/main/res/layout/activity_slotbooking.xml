@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_slotbooking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/splash_background"
+    tools:context="com.example.nageshwari.parking_lot.slotbooking">
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/date"
+        android:layout_width="150dp"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/number"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="43dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:text="Search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/duration"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/search"
+        android:onClick="btn_search"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/search"
+        android:layout_marginTop="15dp"
+        android:id="@+id/l2"
+        android:orientation="horizontal"></LinearLayout>
+
+    <TextView
+        android:text="Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="61dp"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/number"
+        android:layout_toLeftOf="@+id/search"
+        android:layout_toStartOf="@+id/search" />
+
+    <TextView
+        android:text="Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/date"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginTop="18dp" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/time"
+        android:layout_below="@+id/date"
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignStart="@+id/date" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/duration"
+        android:entries="@array/dur"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignLeft="@+id/time"
+        android:layout_alignStart="@+id/time" />
+
+    <TextView
+        android:text="Duration(in hrs)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_below="@+id/time"
+        android:layout_toLeftOf="@+id/search"
+        android:layout_toStartOf="@+id/search"
+        android:layout_marginTop="21dp" />
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/splash_background"
+    tools:context="com.example.nageshwari.parking_lot.welcome">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignRight="@+id/new_bookin"
+        android:layout_alignEnd="@+id/new_bookin"
+        android:id="@+id/name" />
+
+    <Button
+        android:text="View Booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_bookin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:id="@+id/view_booking"
+        android:onClick="btn_view" />
+
+    <Button
+        android:text="My Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_booking"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/details"
+        android:onClick="btn_detail" />
+
+    <Button
+        android:text="New Booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/new_bookin"
+        android:layout_below="@+id/name"
+        android:layout_alignRight="@+id/view_booking"
+        android:layout_alignEnd="@+id/view_booking"
+        android:onClick="btn_new" />
+
+    <TextView
+        android:text="WELCOME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/cancel_booking"
+        android:layout_alignStart="@+id/cancel_booking" />
+
+    <Button
+        android:text="Cancel Booking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/cancel_booking"
+        android:layout_below="@+id/details"
+        android:layout_centerHorizontal="true"
+        android:onClick="btn_del" />
+
+    <Button
+        android:text="Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/logout"
+        android:onClick="logout"
+        android:layout_below="@+id/cancel_booking"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
